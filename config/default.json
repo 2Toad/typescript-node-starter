@@ -1,0 +1,14 @@
+{
+  "server": {
+    "api": {
+      "port": 8000
+    }
+  },
+  "logger": {
+    "slack": {
+      "domain": "YOUR_SLACK_DOMAIN",
+      "token": "YOUR_SLACK_TOKEN",
+      "channel": "YOUR_SLACK_CHANNEL"
+    }
+  }
+}

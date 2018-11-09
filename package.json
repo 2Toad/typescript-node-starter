@@ -1,0 +1,44 @@
+{
+  "name": "typescript-node-starter",
+  "version": "1.0.0",
+  "description": "TypeScript Node Starter",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run lint && npm run test && npm run clean && tsc",
+    "start": "node ./dist/app.js",
+    "dev": "tsc-watch --onSuccess \"node ./dist/app.js\"",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2Toad/typescript-node-starter.git"
+  },
+  "author": "2Toad",
+  "license": "MIT",
+  "homepage": "https://github.com/2Toad/typescript-node-starter#readme",
+  "bugs": {
+    "url": "https://github.com/2Toad/typescript-node-starter/issues"
+  },
+  "dependencies": {
+    "config": "^2.0.1",
+    "express": "^4.16.4",
+    "slack-winston": "0.0.9",
+    "sprintf-js": "^1.1.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.2",
+    "@types/slack-winston": "0.0.2",
+    "@types/supertest": "^2.0.6",
+    "jest": "^23.6.0",
+    "supertest": "^3.3.0",
+    "ts-jest": "^23.10.4",
+    "tsc-watch": "^1.0.30",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
